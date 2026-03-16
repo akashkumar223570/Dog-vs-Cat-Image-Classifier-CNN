@@ -44,7 +44,7 @@ font-weight:bold;
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("cats_dogs_cnn_model.h5")
+    return tf.keras.models.load_model("/teamspace/studios/this_studio/Cat_vs_Dog/CNN_Project/cats_dogs_cnn_model.h5")
 
 model = load_model()
 
@@ -121,9 +121,9 @@ if uploaded_file:
         labels = ["Dog 🐶", "Cat 🐱"]
         values = [prob, 1-prob]
 
-        fig, ax = plt.subplots(figsize=(6,3))
+        fig, ax = plt.subplots(figsize=(3.5,1.8))
 
-        bars = ax.barh(labels, values)
+        bars = ax.barh(labels, values, height=0.3)
 
         # Highlight predicted class
         for i, v in enumerate(values):
