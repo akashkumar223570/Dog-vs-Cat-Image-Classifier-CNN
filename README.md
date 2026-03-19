@@ -35,6 +35,11 @@ The model is trained on a Kaggle dataset and deployed as a web application using
 
 ![Prediction Screenshot](images/prediction.png)
 
+
+![Prediction Screenshot](images/prediction2.png)
+
+
+
 > 📌 *Note: Add your screenshots inside the `images/` folder*
 
 ---
